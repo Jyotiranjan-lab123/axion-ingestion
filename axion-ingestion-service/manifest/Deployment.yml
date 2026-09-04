@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: <ACR_NAME>.azurecr.io/backend:<TAG>
+          image: xonacr.azurecr.io/axion-ingestion-service:latest
           ports:
             - containerPort: 8080
           resources:
