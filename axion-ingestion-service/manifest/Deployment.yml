@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend
-  namespace: axion
+  namespace: default
 spec:
   replicas: 2
   selector:
