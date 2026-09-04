@@ -17,7 +17,7 @@ spec:
         - name: backend
           image: xonacr.azurecr.io/axion-ingestion-service:latest
           ports:
-            - containerPort: 8080
+            - containerPort: 8000
           env:
             - name: DATABASE_URL
               value: "postgresql://axion_user:P%40ssw01rd%40123@postgresql.axiondb.svc.cluster.local:5432/axion_db"
