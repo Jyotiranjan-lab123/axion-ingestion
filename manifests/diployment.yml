@@ -1,0 +1,19 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: axion-ingestion
+spec:
+  selector:
+    matchLabels:
+      app: axion-ingestion
+  template:
+    metadata:
+      labels:
+        app: axion-ingestion
+    spec:
+      containers:
+      - name: axion-ingestion
+        image: xonacr.azurecr.io/axion-ingestion-service:latest
+        ports:
+        - containerPort: 8000
