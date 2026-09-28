@@ -4,7 +4,7 @@ Loads database connection string from environment variable.
 """
 
 import os
-from dataclasses import dataclass
+from dataclasses import  dataclass
 
 
 @dataclass
